@@ -110,8 +110,8 @@ Section -Scala SEC0000
 		MessageBox MB_OK "Scala unzip failed: $R0"
 		Quit
 	Delete $TEMP\scala-latest.zip
-	CopyFiles "$TEMP\scala-$ScalaVer.final\*" "$INSTDIR"
-	RMDir /r "$TEMP\scala-$ScalaVer.final"
+	CopyFiles "$TEMP\scala-$ScalaVer\*" "$INSTDIR"
+	RMDir /r "$TEMP\scala-$ScalaVer"
   
 	#Update PATH variable
 	StrCpy $PathKey "HKLM"
