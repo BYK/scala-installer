@@ -96,7 +96,7 @@ Section -Scala SEC0000
 	
 	DetailPrint "Found Scala at version $ScalaVer"
 	#Download latest version of Scala for Windows
-	inetc::get "http://www.scala-lang.org/downloads/distrib/files/scala-$ScalaVer.final.zip" $TEMP\scala-latest.zip
+	inetc::get "http://www.scala-lang.org/downloads/distrib/files/scala-$ScalaVer.zip" $TEMP\scala-latest.zip
 	Pop $R0 ;Get the return value
 	StrCmp $R0 "OK" +3
 		MessageBox MB_OK "Scala download failed: $R0"
